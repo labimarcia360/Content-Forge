@@ -1,0 +1,88 @@
+#CONTENT FORGE
+######Manual de uso — gerador de conteúdo estático para Instagram
+
+**1. O que é o app**
+O Content Forge é um gerador de posts, stories e carrosséis para Instagram no formato de imagem estática (PNG). Ele roda inteiro no navegador — sem instalação, sem login, sem servidor. Basta abrir o arquivo index.html.
+A diferença dele pros geradores de marca única (como o milena-content-forge) é que aqui você escolhe três coisas de forma independente: Estilo, Tipografia e Layout. Isso permite usar o mesmo app pra qualquer identidade visual, não só uma marca fixa.
+
+**2. Formatos disponíveis**
+| Formato |	Dimensão |	Uso recomendado |
+| :------ | :------- | :--------------- |
+| Post	  | 1080 × 1080 px | Feed — peça única, sem sequência |
+| Story	  | 1080 × 1920 px | Sequência de slides ilimitada — capa + conteúdo |
+| Carrossel	| 1080 × 1350 px |	Sequência de slides ilimitada — capa + conteúdo |
+
+Story e Carrossel funcionam como sequência: você adiciona quantos slides quiser, navega entre eles pelos "chips" no topo do painel, e cada um pode ser independente dos outros.
+
+**3. Escolhendo o Estilo**
+O Estilo define, de uma vez, a personalidade visual: cor, moldura e formato de botão. Você pode trocar o estilo a qualquer momento e depois sobrescrever qualquer parte dele manualmente.
+| Estilo | Visual	| Fonte padrão |
+| :----- | :----- | :----------- |
+| Terminal | Fundo preto, grid verde, moldura técnica (cantos em L), chrome de janela de sistema, botão em colchete [ ENTER ]	| Share Tech Mono + IBM Plex Mono |
+| Editorial |	Preto/âmbar, moldura de régua dupla, botão sublinhado — visual elegante e clássico | Playfair Display + Inter |
+| Moderno	| Bold, sem moldura, bloco geométrico decorativo, botão em pílula arredondada	| Space Grotesk + Inter |
+
+**4. Tipografia — trocando as fontes**
+Independente do estilo escolhido, você pode trocar o par de fontes no menu "Tipografia":
+    • Mono terminal — Share Tech Mono + IBM Plex Mono
+    • Serif editorial — Playfair Display + Inter
+    • Geométrica — Space Grotesk + Inter
+    • Amigável — Poppins + Roboto
+Use isso quando quiser, por exemplo, um post no Estilo Terminal mas com a tipografia Serif — o app permite qualquer combinação.
+
+**5. Layout — organizando o conteúdo**
+  5.1 Alinhamento
+  Esquerda (padrão, mais formal) ou Centro (mais impactante, bom pra frases curtas de efeito).
+
+  **5.2 Fotografia (opcional)**
+  Cada slide/post tem o checkbox "incluir fotografia". Desligado, o texto ocupa o espaço todo — recomendado quando você não tem uma foto de qualidade pronta.
+  Ligado, escolha a Disposição:
+    • Empilhada — foto embaixo do texto (melhor pro formato vertical do Story)
+    • Lado a lado — foto ao lado do texto (funciona bem em Post e capa de Carrossel)
+
+  **5.3 Botões (CTA)**
+  Também opcionais, via checkbox "incluir botões". Importante: o botão é só visual — Instagram não permite link clicável dentro de uma imagem. Pra link de verdade, use o Link Sticker nativo do Instagram no Story, ou o link da bio no feed.
+
+**6. Campos de texto — o que preencher**
+| Campo	| Função |
+| :---- | :----- |
+| Eyebrow	| Linha pequena de contexto acima do título (ex.: categoria ou selo) |
+| Título principal |	A palavra ou frase de maior destaque visual |
+| Subtítulo (linhas 1 e 2) | Reforça o título com um complemento — mantenha curto |
+| Comando / kicker	| Linha de abertura do bloco de texto — funciona como um "antetítulo" de resumo |
+| Texto principal	| Corpo do conteúdo. Use **duas asteriscos** ao redor de uma palavra pra destacá-la na cor de acento |
+| Linha extra (tags/prova social) |	Espaço pra portfólio, clientes, hashtags ou qualquer reforço secundário |
+| Legenda da foto	|Texto pequeno abaixo da imagem, quando a foto está ativada |
+| Botão preenchido / contornado	| Texto dos dois CTAs, quando ativados |
+
+**7. Cor**
+Dois seletores independentes:
+    • Cor de destaque — paleta pronta (verde, âmbar, ciano, magenta, vermelho, roxo) ou seletor livre
+    • Cor de fundo — preto profundo, preto suave, branco, bege, ou seletor livre
+O contraste do texto se ajusta automaticamente conforme o fundo escolhido — não precisa se preocupar em escolher uma cor de texto que combine.
+
+**8. Trabalhando com sequências (Story e Carrossel)**
+    1. Clique em "+ slide" pra adicionar um novo slide à sequência.
+    2. Um slide pode ser do tipo Capa (título + bloco de texto + foto opcional) ou Conteúdo (frase grande + numeração de slide).
+    3. Clique em um "chip" no topo pra trocar qual slide está sendo editado.
+    4. Use o × ao lado do chip pra remover um slide (não é possível remover o último).
+    5. Clique na miniatura no painel de visualização pra também trocar o slide ativo.
+
+**9. Baixando o conteúdo**
+    • Baixar 1 slide/post — gera um PNG na resolução exata do formato escolhido
+    • Baixar todos (ZIP) — em Story e Carrossel, exporta todos os slides da sequência de uma vez, numerados em ordem
+Os arquivos saem prontos para upload direto no Instagram, sem necessidade de redimensionar.
+
+**10. Boas práticas**
+    • Frases curtas no título — a tipografia é grande de propósito, texto longo perde impacto
+    • Use o destaque (**palavra**) com moderação — 1 ou 2 destaques por bloco, no máximo
+    • Prefira Alinhamento Centro só em frases muito curtas — em blocos de texto longos, a leitura em Centro cansa mais
+    • No Story sem foto, confie no espaçamento automático — o app já centraliza o bloco de texto no espaço vertical disponível
+    • Mantenha o mesmo Estilo dentro de uma mesma sequência de Carrossel/Story, pra não quebrar a identidade visual entre slides
+
+**11. Limitações — o que o app não faz**
+    • Botões de CTA não são clicáveis — é uma limitação do Instagram, não do app
+    • Não existe backend — é um arquivo estático; qualquer pessoa que abrir o arquivo pode ver o código-fonte
+    • Não há armazenamento entre sessões — se fechar a aba sem baixar, o conteúdo digitado se perde
+    • Não gera vídeo/animação — apenas imagem estática
+
